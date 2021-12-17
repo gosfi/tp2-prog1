@@ -1,0 +1,124 @@
+<style>
+table#jeu {
+    border-spacing: 10px;
+    border-collapse: separate;
+    display: inline-block;
+}
+table#jeu td {
+    background-color: #d0d0d0;
+    border:1px solid #008CBA;
+    width: 100px;
+    height: 120px;
+    background-position: center;
+    background-size: cover;
+}
+
+.menu-element {
+  margin: 10px;
+  border:1px solid #008CBA;
+  width: 100%;
+}
+
+.level-button {
+  padding: 15px 30px;
+  background-color: #008CBA;
+  opacity: 0.7;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+}
+
+.active-level-button {
+  opacity: 1 !important;
+}
+
+#score-box {
+  padding: 5px 5px;
+  text-align: center;
+}
+
+#score-text {
+  font-family: OCR A Std, monospace;
+}
+
+.score-title {
+  font-weight: bold;
+}
+
+.texte-meilleur {
+  font-size: small;
+}
+
+.menu {
+  display: inline-block;
+  width: 150px;
+}
+</style>
+
+<link rel="preload" as="image" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Kittyply_edit1.jpg/320px-Kittyply_edit1.jpg">
+<link rel="preload" as="image" href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Felis_silvestris_catus_lying_on_rice_straw.jpg/320px-Felis_silvestris_catus_lying_on_rice_straw.jpg">
+<link rel="preload" as="image" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Domestic_Cat_Face_Shot.jpg/320px-Domestic_Cat_Face_Shot.jpg">
+<link rel="preload" as="image" href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Gato_enervado_pola_presencia_dun_can.jpg/308px-Gato_enervado_pola_presencia_dun_can.jpg">
+<link rel="preload" as="image" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Felis_catus-cat_on_snow.jpg/320px-Felis_catus-cat_on_snow.jpg">
+<link rel="preload" as="image" href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Feral_cat_Virginia_crop.jpg/206px-Feral_cat_Virginia_crop.jpg">
+<link rel="preload" as="image" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Black_Cat_%287983739954%29.jpg/320px-Black_Cat_%287983739954%29.jpg">
+<link rel="preload" as="image" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Roo_Female_Somali_in_Cat_Caf%C3%A9_Tokyo.jpg/160px-Roo_Female_Somali_in_Cat_Caf%C3%A9_Tokyo.jpg">
+<link rel="preload" as="image" href="https://upload.wikimedia.org/wikipedia/commons/6/6e/Longhairedmunchkin.jpg">
+<link rel="preload" as="image" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Niobe050905-Siamese_Cat.jpeg/179px-Niobe050905-Siamese_Cat.jpeg">
+<link rel="preload" as="image" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Charcoal_Bengal.jpg/320px-Charcoal_Bengal.jpg">
+<link rel="preload" as="image" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Paintedcats_Red_Star_standing.jpg/187px-Paintedcats_Red_Star_standing.jpg">
+<link rel="preload" as="image" href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/ChausieBGT.jpg/221px-ChausieBGT.jpg">
+<link rel="preload" as="image" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Savannah_Cat_portrait.jpg/160px-Savannah_Cat_portrait.jpg">
+<link rel="preload" as="image" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Plume_the_Cat.JPG/320px-Plume_the_Cat.JPG">
+<link rel="preload" as="image" href="https://upload.wikimedia.org/wikipedia/commons/e/e9/Persian_sand_CAT.jpg">
+<link rel="preload" as="image" href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Detalhe_nariz_Osk.jpg/180px-Detalhe_nariz_Osk.jpg">
+<link rel="preload" as="image" href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Siam_blue_point.jpg/263px-Siam_blue_point.jpg">
+<link rel="preload" as="image" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Felis_silvestris_silvestris.jpg/208px-Felis_silvestris_silvestris.jpg">
+<link rel="preload" as="image" href="https://upload.wikimedia.org/wikipedia/commons/f/f7/Prionailurus_viverrinus_01.jpg">
+
+<div>
+  <table id="jeu">
+      <tr>
+        <td id="carte0"></td>
+        <td id="carte1"></td>
+        <td id="carte2" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Gato_enervado_pola_presencia_dun_can.jpg/308px-Gato_enervado_pola_presencia_dun_can.jpg);"></td>
+        <td id="carte3" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/6e/Longhairedmunchkin.jpg);"></td>
+      </tr>
+      <tr>
+        <td id="carte4" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Domestic_Cat_Face_Shot.jpg/320px-Domestic_Cat_Face_Shot.jpg);"></td>
+        <td id="carte5" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Gato_enervado_pola_presencia_dun_can.jpg/308px-Gato_enervado_pola_presencia_dun_can.jpg);"></td>
+        <td id="carte6" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Domestic_Cat_Face_Shot.jpg/320px-Domestic_Cat_Face_Shot.jpg);"></td>
+        <td id="carte7"></td>
+      </tr>
+      <tr>
+        <td id="carte8" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/e/e9/Persian_sand_CAT.jpg);"></td>
+        <td id="carte9" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/e/e9/Persian_sand_CAT.jpg);"></td>
+        <td id="carte10"></td>
+        <td id="carte11" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/6e/Longhairedmunchkin.jpg);"></td>
+      </tr>
+  </table>
+
+  <div class="menu">
+    <div id="score-box" class="menu-element">
+      <div class="score-title">SCORE</div>
+      <div id="score-text">100</div>
+    </div>
+    <button id="niveauFacile" class="level-button menu-element active-level-button">
+      <b>Facile</b><br>
+      <div class="texte-meilleur">Meilleur: -</div>
+    </button>
+    <br>
+    <button id="niveauMoyen" class="level-button menu-element">
+      <b>Moyen</b>
+      <br>
+      <div class="texte-meilleur">Meilleur: -</div>
+    </button>
+    <br>
+    <button id="niveauDifficile" class="level-button menu-element">
+      <b>Difficile</b>
+      <br>
+      <div class="texte-meilleur">Meilleur: -</div>
+    </button>
+  </div>
+</div>
